@@ -39,7 +39,7 @@ function App() {
     <>
       <BrowserRouter>
         <NavBarComponent onAddEmployeeClick={handleAddEmployeeClick} />
-        <div style={{ paddingTop: '3%'}}>
+        <div className="container-fluid" style={{ paddingTop: '80px', paddingBottom: '60px', minHeight: 'calc(100vh - 140px)' }}>
           <Routes>
             <Route path="/" element={<ListEmployeeComponent onEditEmployee={handleEditEmployeeClick} refreshKey={refreshKey} />} />
             <Route path="/employess" element={<ListEmployeeComponent onEditEmployee={handleEditEmployeeClick} refreshKey={refreshKey} />} />

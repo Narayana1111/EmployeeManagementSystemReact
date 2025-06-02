@@ -117,7 +117,7 @@ const ListEmployeeComponent = ({ onEditEmployee, refreshKey }) => {
                       <td>{employee.firstName}</td>
                       <td>{employee.lastName}</td>
                       <td>{employee.email}</td>
-                      <td>
+                      <td  className="text-end">
                         <button
                           className="btn btn-warning btn-sm me-2 px-3"
                           onClick={() => onEditEmployee && onEditEmployee(employee.id)}
